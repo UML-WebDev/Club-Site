@@ -1,0 +1,35 @@
+@import "colors";
+@import "fonts";
+@import "animations";
+
+body{
+    background-image: url("http://img8.photobucket.com/albums/v28/psychos/cloudybluebg.png");
+    background-repeat: repeat repeat;
+}
+
+.titleContainer{
+    display: flex;
+    justify-content: center;
+    .title{
+        font-size: 4em;
+        animation: fadeIn .5s;
+    }    
+}
+
+.infoContainer{
+    display: flex;
+    justify-content: center;
+    .info{
+        font-size: 2em;
+        width: 80%;
+        animation: spin .8s;
+        height: 50vh;
+        padding: 10px;
+        border: solid 5px $pink;
+        background:$lightpink;
+        opacity: .5;
+        &:hover{
+            opacity: 1;
+        }
+    }  
+}
