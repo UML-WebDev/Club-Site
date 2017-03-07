@@ -3,39 +3,60 @@
 @import "animations";
 
 .titleContainer{
-    margin-left: 10%;
-    margin-right: 10%;
+    /*height: 30vh;*/
+    margin: 0;
+    margin-left: 15%;
+    margin-right: 15%;
     display: flex;
     flex-grow: 1;
     align-items: center;
     flex-direction: column;
     font-family: 'Crimson Text', serif;
+    border-bottom: solid .5px $grey;
     .title{
         cursor: default;
         width: auto;
         text-align: center;
         text-align: justify;
         font-size: 2.5em;
-        animation: fadeIn .5s;
+        /*animation: fadeIn .5s;*/
         margin-bottom: 5px;
-        border-bottom: solid .5px $blue;
+        /*border-bottom: solid .5px $blue;*/
     }
     .subtitle{
-        animation: fadeInRight .5s;
+        animation: fadeInTop .5s;
         width: auto;
-        text-align: justify;
         margin: 0;        
+        text-align: justify;
+        margin-bottom: 20px;
     }
 }
 
 .infoContainer{
     display: flex;
     justify-content: center;
-    .info{
+    flex-wrap: wrap;
+    .card{
+        margin: 10px;
         font-size: 1.5em;
-        width: 80%;
-        height: 50vh;
+        width: 20%;
+        min-width: 300px;
+        height: 450px;
+        max-height: 55vh;
         padding: 10px;
-
+        border: solid 1px $grey;
     }  
+}
+
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    .about{
+        font-size: 2em;
+        line-height: 1.5em;
+    }
 }

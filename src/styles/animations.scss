@@ -18,6 +18,28 @@
     }
 }
 
+@keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        padding-top: 15px;
+    }
+    100% {
+        padding-top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
 @-moz-keyframes spin {
     from { -moz-transform: rotate(0deg); }
     to { -moz-transform: rotate(360deg); }
