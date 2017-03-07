@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 
-class App extends Component {
-  render() {
-    return (
+const App = () => {
+  return (
       <div>
         <div className="titleContainer">
           <h1 className="title">UMass Lowell Web Development Club</h1>
@@ -10,12 +9,11 @@ class App extends Component {
         </div>
         <div className="infoContainer">
           <p className="info">
-
+            {/* About the club! */}
           </p>
         </div>
       </div>
     );
-  }
 }
 
 export default App;
