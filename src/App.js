@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Card from './card';
+import Links from './links';
 
 const App = () => {
   return (
@@ -15,25 +15,25 @@ const App = () => {
         <Card title="test four" />*/}
         <div className="aboutContainer">
           <p className="about">
-            The point of this club is to inspire interest in web applications
+            The point of this <span className="design">club</span> is to inspire interest in <span className="design">web applications </span>
 
             through an incubator-like setting. This club was started by a group
 
-            of individuals with both professional and personal experience in
+            of individuals with both <span className="design">professional</span> and <span className="design">personal</span> experience in
 
-            all different parts of a "full stack", from dev-ops to building a
+            all different parts of a <span className="design">"full stack"</span>, from <span className="design">dev-ops</span> to building a
 
-            REST API to styling with CSS. An average day in the club may
+            <span className="design"> REST API</span>, and more. An average day in the club may
 
             include; a short code along to learn how to make a real time chat
 
-            room with Socket.io/Node.js as well as time to work on side
+            room with <span className="design">Socket.io/Node.js</span> as well as time to work on <span className="design">side
 
-            projects/school projects in an environment of like minded people.
+            projects/school projects</span> in an environment of like minded people.
 
-            We are planning on attending various meet-ups/conferences in
+            We are planning on attending various <span className="design">meet-ups/conferences</span> in
 
-            Boston, hosting in-house hackathons, and getting speakers from the
+            Boston, hosting in-house <span className="design">hackathons</span>, and getting <span className="design">speakers</span> from the
 
             industry to talk to our club.
 
@@ -41,11 +41,12 @@ const App = () => {
 
             So if you’re interested in expanding your programming knowledge
 
-            beyond C/C++ and gain practical “full stack” experience, we’d love
+            <span className="design"> beyond C/C++</span> and gain practical <span className="design">“full stack”</span> experience, we’d love
 
-            to have you join us on our first meeting on Tuesdays at 6pm in Olsen 311.
+            to have you join us on our weekly meetings on Tuesdays at 6pm in Olsen 311.
           </p>
         </div>
+        <Links />        
       </div>
     );
 }

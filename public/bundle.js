@@ -60,7 +60,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	__webpack_require__(179);
+	__webpack_require__(180);
 
 	_reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('root'));
 
@@ -21512,9 +21512,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _card = __webpack_require__(183);
+	var _links = __webpack_require__(184);
 
-	var _card2 = _interopRequireDefault(_card);
+	var _links2 = _interopRequireDefault(_links);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21542,22 +21542,108 @@
 	      _react2.default.createElement(
 	        'p',
 	        { className: 'about' },
-	        'The point of this club is to inspire interest in web applications through an incubator-like setting. This club was started by a group of individuals with both professional and personal experience in all different parts of a "full stack", from dev-ops to building a REST API to styling with CSS. An average day in the club may include; a short code along to learn how to make a real time chat room with Socket.io/Node.js as well as time to work on side projects/school projects in an environment of like minded people. We are planning on attending various meet-ups/conferences in Boston, hosting in-house hackathons, and getting speakers from the industry to talk to our club. So if you\u2019re interested in expanding your programming knowledge beyond C/C++ and gain practical \u201Cfull stack\u201D experience, we\u2019d love to have you join us on our first meeting on Tuesdays at 6pm in Olsen 311.'
+	        'The point of this ',
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'design' },
+	          'club'
+	        ),
+	        ' is to inspire interest in ',
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'design' },
+	          'web applications '
+	        ),
+	        'through an incubator-like setting. This club was started by a group of individuals with both ',
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'design' },
+	          'professional'
+	        ),
+	        ' and ',
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'design' },
+	          'personal'
+	        ),
+	        ' experience in all different parts of a ',
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'design' },
+	          '"full stack"'
+	        ),
+	        ', from ',
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'design' },
+	          'dev-ops'
+	        ),
+	        ' to building a',
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'design' },
+	          ' REST API'
+	        ),
+	        ', and more. An average day in the club may include; a short code along to learn how to make a real time chat room with ',
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'design' },
+	          'Socket.io/Node.js'
+	        ),
+	        ' as well as time to work on ',
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'design' },
+	          'side projects/school projects'
+	        ),
+	        ' in an environment of like minded people. We are planning on attending various ',
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'design' },
+	          'meet-ups/conferences'
+	        ),
+	        ' in Boston, hosting in-house ',
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'design' },
+	          'hackathons'
+	        ),
+	        ', and getting ',
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'design' },
+	          'speakers'
+	        ),
+	        ' from the industry to talk to our club. So if you\u2019re interested in expanding your programming knowledge',
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'design' },
+	          ' beyond C/C++'
+	        ),
+	        ' and gain practical ',
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'design' },
+	          '\u201Cfull stack\u201D'
+	        ),
+	        ' experience, we\u2019d love to have you join us on our weekly meetings on Tuesdays at 6pm in Olsen 311.'
 	      )
-	    )
+	    ),
+	    _react2.default.createElement(_links2.default, null)
 	  );
 	};
 
 	exports.default = App;
 
 /***/ },
-/* 179 */
+/* 179 */,
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(180);
+	var content = __webpack_require__(181);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(182)(content, {});
@@ -21577,73 +21663,17 @@
 	}
 
 /***/ },
-/* 180 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(181)();
+	exports = module.exports = __webpack_require__(183)();
 	// imports
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Crimson+Text);", ""]);
 
 	// module
-	exports.push([module.id, "@keyframes fadeIn {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fadeInRight {\n  0% {\n    opacity: 0;\n    padding-left: 50px; }\n  100% {\n    padding-left: 0px;\n    opacity: 1; } }\n\n@keyframes fadeInBottom {\n  0% {\n    opacity: 0;\n    padding-top: 15px; }\n  100% {\n    padding-top: 0px;\n    opacity: 1; } }\n\n@keyframes fadeInTop {\n  0% {\n    opacity: 0;\n    transform: translateY(-10px); }\n  100% {\n    transform: translateY(0px);\n    opacity: 1; } }\n\n@-moz-keyframes spin {\n  from {\n    -moz-transform: rotate(0deg); }\n  to {\n    -moz-transform: rotate(360deg); } }\n\n@-webkit-keyframes spin {\n  from {\n    -webkit-transform: rotate(0deg); }\n  to {\n    -webkit-transform: rotate(360deg); } }\n\n@keyframes spin {\n  from {\n    transform: rotate(0deg); }\n  to {\n    transform: rotate(360deg); } }\n\n.titleContainer {\n  /*height: 30vh;*/\n  margin: 0;\n  margin-left: 15%;\n  margin-right: 15%;\n  display: flex;\n  flex-grow: 1;\n  align-items: center;\n  flex-direction: column;\n  font-family: 'Crimson Text', serif;\n  border-bottom: solid 0.5px #b7b7b7; }\n  .titleContainer .title {\n    cursor: default;\n    width: auto;\n    text-align: center;\n    text-align: justify;\n    font-size: 2.5em;\n    /*animation: fadeIn .5s;*/\n    margin-bottom: 5px;\n    /*border-bottom: solid .5px $blue;*/ }\n  .titleContainer .subtitle {\n    animation: fadeInTop .5s;\n    width: auto;\n    margin: 0;\n    text-align: justify;\n    margin-bottom: 20px; }\n\n.infoContainer {\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap; }\n  .infoContainer .card {\n    margin: 10px;\n    font-size: 1.5em;\n    width: 20%;\n    min-width: 300px;\n    height: 450px;\n    max-height: 55vh;\n    padding: 10px;\n    border: solid 1px #b7b7b7; }\n\n.aboutContainer {\n  display: flex;\n  justify-content: center;\n  margin-top: 80px;\n  margin-bottom: 10px;\n  margin-left: 15%;\n  margin-right: 15%; }\n  .aboutContainer .about {\n    font-size: 2em;\n    line-height: 1.5em; }\n", ""]);
+	exports.push([module.id, "@keyframes fadeIn {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fadeInRight {\n  0% {\n    opacity: 0;\n    padding-left: 50px; }\n  100% {\n    padding-left: 0px;\n    opacity: 1; } }\n\n@keyframes fadeInBottom {\n  0% {\n    opacity: 0;\n    padding-top: 15px; }\n  100% {\n    padding-top: 0px;\n    opacity: 1; } }\n\n@keyframes fadeInTop {\n  0% {\n    opacity: 0;\n    transform: translateY(-10px); }\n  100% {\n    transform: translateY(0px);\n    opacity: 1; } }\n\n@-moz-keyframes spin {\n  from {\n    -moz-transform: rotate(0deg); }\n  to {\n    -moz-transform: rotate(360deg); } }\n\n@-webkit-keyframes spin {\n  from {\n    -webkit-transform: rotate(0deg); }\n  to {\n    -webkit-transform: rotate(360deg); } }\n\n@keyframes spin {\n  from {\n    transform: rotate(0deg); }\n  to {\n    transform: rotate(360deg); } }\n\nbody {\n  height: 100%; }\n\n.links {\n  position: fixed;\n  display: flex;\n  align-items: flex-end;\n  bottom: 0;\n  right: 0; }\n  .links .icon {\n    cursor: pointer;\n    height: auto;\n    width: 45px;\n    padding: 3px;\n    border-bottom: solid white 3px;\n    margin-top: 10px;\n    margin-right: 15px; }\n    .links .icon:hover {\n      border-bottom: solid #f28500 3px; }\n\n.titleContainer {\n  /*height: 30vh;*/\n  margin: 0;\n  margin-left: 15%;\n  margin-right: 15%;\n  display: flex;\n  flex-grow: 1;\n  align-items: center;\n  flex-direction: column;\n  font-family: 'Crimson Text', serif;\n  border-bottom: solid 0.5px #b7b7b7; }\n  .titleContainer .title {\n    cursor: default;\n    width: auto;\n    text-align: center;\n    text-align: justify;\n    font-size: 2.5em;\n    /*animation: fadeIn .5s;*/\n    margin-bottom: 5px;\n    /*border-bottom: solid .5px $blue;*/ }\n  .titleContainer .subtitle {\n    animation: fadeInTop .5s;\n    width: auto;\n    margin: 0;\n    text-align: justify;\n    margin-bottom: 20px; }\n\n.design {\n  color: black; }\n  .design:hover {\n    color: #d97700;\n    cursor: default; }\n\n.infoContainer {\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap; }\n  .infoContainer .card {\n    margin: 10px;\n    font-size: 1.5em;\n    width: 20%;\n    min-width: 300px;\n    height: 450px;\n    max-height: 55vh;\n    padding: 10px;\n    border: solid 1px #b7b7b7; }\n\n.aboutContainer {\n  font-family: 'Crimson Text', serif;\n  color: #4a4a4a;\n  display: flex;\n  justify-content: center;\n  margin-top: 80px;\n  margin-bottom: 10px;\n  margin-left: 15%;\n  margin-right: 15%; }\n  .aboutContainer .about {\n    font-size: 2em;\n    line-height: 1.5em; }\n\n@media all and (max-width: 1000px) {\n  .links {\n    flex-direction: column; } }\n", ""]);
 
 	// exports
-
-
-/***/ },
-/* 181 */
-/***/ function(module, exports) {
-
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	// css base code, injected by the css-loader
-	module.exports = function() {
-		var list = [];
-
-		// return the list of modules as css string
-		list.toString = function toString() {
-			var result = [];
-			for(var i = 0; i < this.length; i++) {
-				var item = this[i];
-				if(item[2]) {
-					result.push("@media " + item[2] + "{" + item[1] + "}");
-				} else {
-					result.push(item[1]);
-				}
-			}
-			return result.join("");
-		};
-
-		// import a list of modules into the list
-		list.i = function(modules, mediaQuery) {
-			if(typeof modules === "string")
-				modules = [[null, modules, ""]];
-			var alreadyImportedModules = {};
-			for(var i = 0; i < this.length; i++) {
-				var id = this[i][0];
-				if(typeof id === "number")
-					alreadyImportedModules[id] = true;
-			}
-			for(i = 0; i < modules.length; i++) {
-				var item = modules[i];
-				// skip already imported module
-				// this implementation is not 100% perfect for weird media query combinations
-				//  when a module is imported multiple times with different media queries.
-				//  I hope this will never occur (Hey this way we have smaller bundles)
-				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-					if(mediaQuery && !item[2]) {
-						item[2] = mediaQuery;
-					} else if(mediaQuery) {
-						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-					}
-					list.push(item);
-				}
-			}
-		};
-		return list;
-	};
 
 
 /***/ },
@@ -21900,6 +21930,62 @@
 
 /***/ },
 /* 183 */
+/***/ function(module, exports) {
+
+	/*
+		MIT License http://www.opensource.org/licenses/mit-license.php
+		Author Tobias Koppers @sokra
+	*/
+	// css base code, injected by the css-loader
+	module.exports = function() {
+		var list = [];
+
+		// return the list of modules as css string
+		list.toString = function toString() {
+			var result = [];
+			for(var i = 0; i < this.length; i++) {
+				var item = this[i];
+				if(item[2]) {
+					result.push("@media " + item[2] + "{" + item[1] + "}");
+				} else {
+					result.push(item[1]);
+				}
+			}
+			return result.join("");
+		};
+
+		// import a list of modules into the list
+		list.i = function(modules, mediaQuery) {
+			if(typeof modules === "string")
+				modules = [[null, modules, ""]];
+			var alreadyImportedModules = {};
+			for(var i = 0; i < this.length; i++) {
+				var id = this[i][0];
+				if(typeof id === "number")
+					alreadyImportedModules[id] = true;
+			}
+			for(i = 0; i < modules.length; i++) {
+				var item = modules[i];
+				// skip already imported module
+				// this implementation is not 100% perfect for weird media query combinations
+				//  when a module is imported multiple times with different media queries.
+				//  I hope this will never occur (Hey this way we have smaller bundles)
+				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+					if(mediaQuery && !item[2]) {
+						item[2] = mediaQuery;
+					} else if(mediaQuery) {
+						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+					}
+					list.push(item);
+				}
+			}
+		};
+		return list;
+	};
+
+
+/***/ },
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -21914,15 +22000,24 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var Card = function Card(props) {
+	var Links = function Links() {
 	  return _react2.default.createElement(
 	    "div",
-	    { className: "card" },
-	    props.title
+	    { className: "links" },
+	    _react2.default.createElement(
+	      "a",
+	      { href: "https://github.com/UML-WebDev", target: "_blank" },
+	      _react2.default.createElement("img", { className: "icon", src: "./img/git.png", alt: "GitHub" })
+	    ),
+	    _react2.default.createElement(
+	      "a",
+	      { href: "https://umasslowellclubs.collegiatelink.net/organization/WDC", target: "_blank" },
+	      _react2.default.createElement("img", { className: "icon", src: "./img/uml.png", alt: "Collegiate Link" })
+	    )
 	  );
 	};
 
-	exports.default = Card;
+	exports.default = Links;
 
 /***/ }
 /******/ ]);

@@ -1,6 +1,13 @@
 $pink : deeppink;
 $lightpink : pink;
+$darkred: rgb(60.9%, 0%, 0%);
 $green: rgb(56.5%, 93.3%, 56.5%);
 $blue: rgb(11.8%, 56.5%, 100%);
 $grey: rgb(71.8%, 71.8%, 71.8%);
 $midgrey: rgb(58.9%, 58.9%, 58.9%);
+$accent: #f28500;
+$almostblack: rgb(29.2%, 29.2%, 29.2%);
+
+@mixin darken-color($color) {
+  color: darken($color, 5%);
+}
